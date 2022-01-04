@@ -23,9 +23,9 @@ const Banner = () => {
           style={{ ...verticalCenter, textAlign: "left" }}
           item
           xs={12}
-          md={5}
+          md={6}
         >
-          <Box>
+          <Box style={{marginLeft: 10}}>
             <Typography variant="h3">
               Your New Smile <br />
               Starts Here
@@ -49,7 +49,7 @@ const Banner = () => {
           </Box>
          
         </Grid>
-        <Grid style={verticalCenter} item xs={12} md={7}>
+        <Grid style={verticalCenter} item xs={12} md={6}>
           <img style={{ width: "500px" }} src={chair} />
         </Grid>
       </Grid>
