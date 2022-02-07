@@ -23,6 +23,7 @@ const Banner = () => {
           style={{ ...verticalCenter, textAlign: "left" }}
           item
           xs={12}
+          sm={12}
           md={6}
         >
           <Box style={{marginLeft: 10}}>
@@ -49,7 +50,7 @@ const Banner = () => {
           </Box>
          
         </Grid>
-        <Grid style={verticalCenter} item xs={12} md={6}>
+        <Grid style={verticalCenter} item xs={12} sm={12} md={6}>
           <img style={{ width: "500px" }} src={chair} />
         </Grid>
       </Grid>
