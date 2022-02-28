@@ -12,7 +12,7 @@ const Feature = () => {
         <Grid item md={6} xs={12}>
           <img style={{ width: 400 }} src={img} />
         </Grid>
-        <Grid sx={{ marginTop: 10}} item md={6} xs={12}>
+        <Grid sx={{ marginTop: 3}} item md={6} xs={12}>
             <Typography sx={{ marginTop:5,textAlign: 'left'}} variant="h3">
                 Exceptional Dental 
                 <br/>Care,on Your Terms
