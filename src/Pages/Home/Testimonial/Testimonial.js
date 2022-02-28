@@ -10,7 +10,7 @@ import people3 from "../../../images/people-3.png";
 
 const Testimonial = () => {
   return (
-    <Box sx={{mt:10}}>
+    <Box sx={{mt:10, mb: 15}}>
       <Box sx={{ textAlign: "left", m: 1 }}>
         <Typography  style={{ color: "rgba(47, 207, 234)" }} variant="h6" gutterBottom component="div">
           TESTIMONIAL
