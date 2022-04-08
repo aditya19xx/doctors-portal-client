@@ -4,8 +4,7 @@ import Grid from '@mui/material/Grid';
 import loginimg from '../../../images/login.png';
 import { Button, TextField, Typography } from '@mui/material';
 import { NavLink } from 'react-router-dom';
-
-const Login = () => {
+const Register = () => {
     const [loginData,setLoginData] = useState({})
     const handleOnChange = e => {
        const  field = e.target.name;
@@ -15,13 +14,13 @@ const Login = () => {
        setLoginData(newLoginData);
     }
     const handleOnSubmit = e => {
-       alert('Submitting')
+       alert('Registering')
     }
     return (
         <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>
           <Grid sx={{mt:10}} item xs={12} md={6}>
-          <Typography variant="body1" gutterBottom> Login </Typography>
+          <Typography variant="body1" gutterBottom> Register </Typography>
          <form onSubmit={handleOnSubmit}>
          <TextField
           sx={{width:'75%', m:1}} 
@@ -40,9 +39,18 @@ const Login = () => {
           type="password"
           variant="standard" 
           />
-          <Button sx={{width:'75%', m:1}} type="submit" variant="contained">Login</Button>
-          <NavLink style={{textDecoration: 'none' }} to="/register">
-          <Button  variant="text">New here? Click here to Register</Button>
+          <TextField 
+          sx={{width:'75%', m:1}}
+          id="standard-basic" 
+          label="Re-Enter Your Password" 
+          name="password2"
+          onChange={handleOnChange}
+          type="password"
+          variant="standard" 
+          />
+          <Button sx={{width:'75%', m:1}} type="submit" variant="contained">Register</Button>
+          <NavLink style={{textDecoration: 'none' }} to="/login">
+          <Button  variant="text">Already Registered? Click here to Login</Button>
           </NavLink>
          </form>
           </Grid>
@@ -54,4 +62,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Register;
