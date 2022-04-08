@@ -7,8 +7,8 @@ import { Button, Container } from '@mui/material';
 const appointmentBanner = {
     background: ` url(${bg})`,
     backgroundColor: "rgba(91, 113, 128, 0.9 )",
-    width: '700px',
-    height: '400px',
+    // width: '700px',
+    // height: '400px',
     backgroundBlendMode: "darken, luminosity",
   };
 

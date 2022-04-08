@@ -15,7 +15,7 @@ const footerBg = {
 const Footer = () => {
     return (
         <Box style={footerBg} sx={{ flexGrow: 1, mt:10 }}>
-      <Grid container spacing={35}>
+      <Grid container spacing={2}>
         <Grid item xs={12} sm={12} md={3}>
         <Typography style={{textAlign: 'left'}} variant="caption" display="block" gutterBottom>
         Emergency Dental Care <br/> Check Up <br/>
@@ -48,10 +48,11 @@ const Footer = () => {
       New York - 101010 Hudson <br/> Yards
       </Typography>
         </Grid>
-      </Grid>
-      <Typography style={{textAlign: 'left', marginLeft: 650, marginTop:20}} variant="caption" display="block" gutterBottom>
+         <Typography sx={{mx:"auto"}} variant="caption" display="block" gutterBottom>
       &copy; ADITYA DAS TURJA All Rights Reserved
       </Typography>
+      </Grid>
+     
     </Box>
     );
 };
