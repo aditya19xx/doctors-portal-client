@@ -5,11 +5,13 @@ import Home from "./Pages/Home/Home/Home";
 import Appointment from "./Pages/Appointment/Appointment/Appointment";
 import Login from "./Pages/Login/Login/Login";
 import Register from "./Pages/Login/Register/Register";
+import AuthProvider from "./Contexts/AuthProvider/AuthProvider";
 
 function App() {
   return (
     <div className="App">
       
+      <AuthProvider>
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />}/>
@@ -19,6 +21,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         </Routes>
       </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }
